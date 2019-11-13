@@ -3,12 +3,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
     tools:context=".Prijava">
+
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login forma"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Korisnicko ime"
+        android:id="@+id/korisnickoIme"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Lozinka"
+        android:id="@+id/lozinka"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Prijavi se"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/loginButton"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nemate račun? Registriraj te se"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Registrirajte se"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/registracijaButton"
+        />
 
 </FrameLayout>
