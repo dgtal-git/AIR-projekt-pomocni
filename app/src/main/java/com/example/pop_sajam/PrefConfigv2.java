@@ -17,4 +17,15 @@ public class PrefConfigv2 {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean(context.getString(R.string.pref_login_status),status);
     }
+    public boolean readLoginStatus (){
+        return sharedPreferences.getBoolean(context.getString(R.string.pref_login_status), false);
+    }
+    public void writeName(String name){
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(context.getString(R.string.pref_user_name), name);
+        editor.commit();
+    }
+    public String readName(){
+        return sharedPreferences.getString(context.getString(R.string.pref_user_name), "User");
+    }
 }
