@@ -2,6 +2,7 @@ package com.example.pop_sajam;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.widget.Toast;
 
 public class PrefConfigv2 {
     private SharedPreferences sharedPreferences;
@@ -27,5 +28,8 @@ public class PrefConfigv2 {
     }
     public String readName(){
         return sharedPreferences.getString(context.getString(R.string.pref_user_name), "User");
+    }
+    public void displayToast (String message){
+        Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
     }
 }
