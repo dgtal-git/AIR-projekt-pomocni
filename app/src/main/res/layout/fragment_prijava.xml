@@ -1,64 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
-    android:paddingBottom="5dp"
-    android:paddingTop="5dp"
-    android:orientation="vertical"
-    tools:context=".Prijava">
+    tools:context=".MainActivity">
 
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login forma"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        />
     <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/korisnickoIme2"
+        android:layout_width="218dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="96dp"
         android:hint="Korisnicko ime"
-        android:id="@+id/korisnickoIme"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/lozinka"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Lozinka"
-        android:id="@+id/lozinka"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:inputType="textPassword"
-        />
     <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Prijavi se"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
         android:id="@+id/loginButton"
-        />
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nemate račun? Registriraj te se"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Registrirajte se"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:id="@+id/registracijaButton"
-        />
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="150dp"
+        android:text="Prijavite se"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/registracijaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="150dp"
+        android:text="Registriraj te se"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lozinka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Password"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
