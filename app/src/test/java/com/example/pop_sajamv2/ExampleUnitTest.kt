@@ -1,4 +1,4 @@
-package com.example.pop_sajam
+package com.example.pop_sajamv2
 
 import org.junit.Test
 

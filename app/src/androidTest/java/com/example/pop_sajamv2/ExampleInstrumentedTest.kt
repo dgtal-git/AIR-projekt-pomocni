@@ -1,4 +1,4 @@
-package com.example.pop_sajam
+package com.example.pop_sajamv2
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.pop_sajam", appContext.packageName)
+        assertEquals("com.example.pop_sajamv2", appContext.packageName)
     }
 }
